@@ -5,9 +5,15 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
+    "build:production": "NODE_ENV=production vue-tsc --noEmit && vite build --mode production",
     "preview": "vite preview",
     "test": "jest",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "deploy": "npm run build:production && npm run build:api",
+    "build:api": "cd goapi.git && go build -o ../goapi-linux cmd/main.go",
+    "start:production": "systemctl start tsboard-api",
+    "stop:production": "systemctl stop tsboard-api",
+    "restart:production": "systemctl restart tsboard-api"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
