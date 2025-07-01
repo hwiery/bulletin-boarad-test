@@ -1,5 +1,6 @@
 import eslintPluginVue from 'eslint-plugin-vue';
 
+
 export default [
   {
     files: ['**/*.vue'],
