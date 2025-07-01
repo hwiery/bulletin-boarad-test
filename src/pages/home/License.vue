@@ -67,20 +67,7 @@
 
             <v-divider></v-divider>
 
-            <v-card-actions>
-              <v-btn
-                prepend-icon="mdi-link-variant"
-                @click="util.open('https://github.com/sirini/tsboard')"
-                rounded="pill"
-                >TSBOARD</v-btn
-              >
-              <v-btn
-                prepend-icon="mdi-link-variant"
-                @click="util.open('https://github.com/sirini/goapi')"
-                rounded="pill"
-                >GOAPI</v-btn
-              >
-            </v-card-actions>
+
           </v-card>
         </v-container>
         <home-footer></home-footer>

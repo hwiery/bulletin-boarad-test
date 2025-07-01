@@ -29,20 +29,6 @@
             </v-list>
 
             <v-divider></v-divider>
-            <v-card-actions>
-              <v-btn
-                prepend-icon="mdi-link-variant"
-                @click="util.open('https://github.com/sirini/tsboard')"
-                >TSBOARD
-                <v-tooltip activator="parent">{{ TEXT[home.lang].GITHUB_TOOLTIP }}</v-tooltip>
-              </v-btn>
-              <v-btn
-                prepend-icon="mdi-link-variant"
-                @click="util.open('https://github.com/sirini/goapi')"
-                >GOAPI
-                <v-tooltip activator="parent">{{ TEXT[home.lang].GITHUB_TOOLTIP }}</v-tooltip>
-              </v-btn>
-            </v-card-actions>
           </v-card>
         </v-container>
         <home-footer></home-footer>

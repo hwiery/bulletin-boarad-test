@@ -1,4 +1,4 @@
-export const IS_DEV = false // 프로덕션에서는 false, 개발 단계에서만 true
+export const IS_DEV = true // 프로덕션에서는 false, 개발 단계에서만 true
 export const VITE_PORT = 3000
 export const DEV_DOMAIN = "http://localhost"
 const dev_url = `${DEV_DOMAIN}:${VITE_PORT}`
@@ -6,7 +6,7 @@ const production_url = "https://tsboard.dev"
 
 // TSBOARD 기본 설정값 : 필요 시 수정하셔야 하는 곳입니다
 export const TSBOARD = {
-  API: (IS_DEV ? dev_url : production_url) + "/goapi",
+  API: (IS_DEV ? `${DEV_DOMAIN}:3003` : production_url) + "/goapi",
   API_PORT: 3003,
   MAX_UPLOAD_SIZE: 1024 * 1024 * 100,
   PREFIX: "",
